@@ -79,7 +79,7 @@ app.get('/shipping-cost', (req, res) => {
 
 // loyalty points earned from a purchase
 function totalPoints(purchaseAmount) {
-  return purchaseAmount * 2;
+  return purchaseAmount * loyaltyRate;
 }
 
 app.get('/loyalty-points', (req, res) => {
